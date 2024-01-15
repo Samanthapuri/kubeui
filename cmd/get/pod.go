@@ -7,7 +7,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/samanthapuri/kubeui/clientset"
+	"github.com/Samanthapuri/kubeui/clientset"
 	"github.com/spf13/cobra"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )
