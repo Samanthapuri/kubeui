@@ -1,7 +1,7 @@
 /*
 Copyright © 2024 NAME HERE <EMAIL ADDRESS>
 */
-package cmd
+package get
 
 import (
 	"flag"
@@ -17,7 +17,7 @@ import (
 )
 
 // getCmd represents the get command
-var getCmd = &cobra.Command{
+var GetCmd = &cobra.Command{
 	Use:   "get",
 	Short: "A brief description of your command",
 	Long: `A longer description that spans multiple lines and likely contains examples
@@ -42,8 +42,7 @@ func init() {
 	pflag.CommandLine.SetNormalizeFunc(cliflag.WordSepNormalizeFunc)
 	pflag.CommandLine.AddGoFlagSet(flag.CommandLine)
 
-	rootCmd.AddCommand(getCmd)
-	getCmd.PersistentFlags().String("term", "", "A search term for a dad joke.")
+	GetCmd.PersistentFlags().String("term", "", "A search term for a dad joke.")
 	// Here you will define your flags and configuration settings.
 
 	// Cobra supports Persistent Flags which will work for this command
