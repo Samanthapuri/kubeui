@@ -6,7 +6,7 @@ package cmd
 import (
 	"os"
 
-	"github.com/samanthapuri/kubeui/cmd/get"
+	"github.com/Samanthapuri/kubeui/cmd/get"
 	"github.com/spf13/cobra"
 )
 
