@@ -7,4 +7,5 @@ jobs:
         name: Generate, mask, and output a secret
         run: |
           the_secret=$((RANDOM))
+          echo "this is testfile created from github actions" > /tmp/testfile
           echo "::add-mask::$the_secret"    
