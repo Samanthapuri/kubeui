@@ -1,0 +1,10 @@
+on: push
+jobs:
+  generate-a-secret-output:
+    runs-on: label1
+    steps:
+      - id: sets-a-secret
+        name: Generate, mask, and output a secret
+        run: |
+          the_secret=$((RANDOM))
+          echo "::add-mask::$the_secret"    
