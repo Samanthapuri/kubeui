@@ -10,4 +10,5 @@ func main() {
 	cmd.Execute()
 	fmt.Println("this is test line")
         fmt.Println("this is local test line")
+	fmt.Println("Added new line")
 }
